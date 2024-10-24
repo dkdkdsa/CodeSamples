@@ -77,8 +77,16 @@ namespace CodeSamples.SCRIBBLE_BATTLE.Weapon
             OnRotateWeaponEvent?.Invoke(dir);
         }
 
+        /// <summary>
+        /// IWeaponHandler에서 상속받은 무기 장착 해제 함수입니다
+        /// </summary>
         public void ReleaseWeapon()
         {
+            //이곳에는 무기를 장착 해제하는 로직이 구현되어야 합니다
+
+            //이 부분에서는 장착 해제 이벤트를 발행해주는 구현이 있어야 합니다
+            //EX
+            OnReleaseWeaponEvent?.Invoke();
         }
 
     }
