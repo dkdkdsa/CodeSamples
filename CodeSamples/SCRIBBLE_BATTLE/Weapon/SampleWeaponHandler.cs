@@ -29,7 +29,7 @@ namespace CodeSamples.SCRIBBLE_BATTLE.Weapon
         /// <summary>
         /// 
         /// </summary>
-        public event Action<Vector2> OnWeaponRotate;
+        public event Action<Vector2> OnRotateWeaponEvent;
 
         /// <summary>
         /// IWeaponHandler에서 상속받은 무기 공격 함수입니다
@@ -64,9 +64,17 @@ namespace CodeSamples.SCRIBBLE_BATTLE.Weapon
             OnEquipWeaponEvent?.Invoke();
         }
 
+        /// <summary>
+        /// IWeaponHandler에서 상속받은 무기 회전 함수입니다
+        /// </summary>
+        /// <param name="dir"></param>
         public void RotateWeapon(Vector2 dir)
         {
+            //이곳에는 무기의 회전 함수를 호출하는 로직이 있어야 합니다
 
+            //이 부분에서는 회전 이벤트를 발행해주는 구현이 있어야 합니다
+            //EX
+            OnRotateWeaponEvent?.Invoke(dir);
         }
 
         public void ReleaseWeapon()

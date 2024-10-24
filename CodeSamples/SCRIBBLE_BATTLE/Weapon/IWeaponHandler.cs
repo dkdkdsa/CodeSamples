@@ -28,7 +28,7 @@ namespace CodeSamples.SCRIBBLE_BATTLE.Weapon
         /// <summary>
         /// 무기가 회전할 때 발행되는 이벤트입니다.
         /// </summary>
-        public event Action<Vector2> OnWeaponRotate;
+        public event Action<Vector2> OnRotateWeaponEvent;
 
         /// <summary>
         /// 무기 장착을 추상화한 함수입니다.
