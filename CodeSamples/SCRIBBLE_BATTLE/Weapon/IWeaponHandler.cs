@@ -3,13 +3,11 @@ using UnityEngine;
 
 namespace CodeSamples.SCRIBBLE_BATTLE.Weapon
 {
-
     /// <summary>
     /// 무기를 핸들링하는 개체의 추상형 인터페이스입니다.
     /// </summary>
     public interface IWeaponHandler
     {
-
         /// <summary>
         /// 무기를 장착하였을 때 발행되는 이벤트입니다.
         /// </summary>
@@ -62,7 +60,5 @@ namespace CodeSamples.SCRIBBLE_BATTLE.Weapon
         /// </summary>
         /// <param name="dir"></param>
         public void RotateWeapon(Vector2 dir);
-
     }
-
 }

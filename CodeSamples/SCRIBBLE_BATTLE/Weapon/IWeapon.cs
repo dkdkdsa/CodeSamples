@@ -2,13 +2,11 @@ using UnityEngine;
 
 namespace CodeSamples.SCRIBBLE_BATTLE.Weapon
 {
-
     /// <summary>
     /// 무기의 추상화 인터페이스입니다
     /// </summary>
     public interface IWeapon
     {
-
         /// <summary>
         /// 추상화된 공격 함수입니다.
         /// 무기의 공격의 경우 마우스 입력에 따라 여러 공격 방법을 가질 수 있도록(EX. 클릭시 발사, 홀드 시 차징)
@@ -29,6 +27,5 @@ namespace CodeSamples.SCRIBBLE_BATTLE.Weapon
         /// 무기 장착이 해제된다면 무기에서 여러 행동(무기 오브젝트 삭제 등)을 해줘야 할 수도 있기에 추상화 하였습니다.
         /// </summary>
         public void Release();
-
     }
 }

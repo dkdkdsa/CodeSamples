@@ -7,7 +7,6 @@ namespace CodeSamples.SCRIBBLE_BATTLE.Weapon
     /// </summary>
     public class SampleNetworkWeapon : NetworkBehaviour
     {
-
         public override void OnNetworkSpawn()
         {
             //이 부분에서는 무기 핸들러의 이벤트를 구독하는 구현이 있어야 합니다
@@ -35,7 +34,5 @@ namespace CodeSamples.SCRIBBLE_BATTLE.Weapon
             //상황에 따라서는 Owner이면 실행하지 않는 조건이 필요할 수 있습니다
             //여기에서는 무기 핸들러에 장착 부분을 실행하여 동기화 해야합니다
         }
-
     }
-
 }

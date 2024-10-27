@@ -8,7 +8,6 @@ namespace CodeSamples.SCRIBBLE_BATTLE.Weapon
     /// </summary>
     public class SampleWeapon : MonoBehaviour, IWeapon
     {
-
         private void Awake()
         {
             //이 부분에서는 무기의 초기화가 있을 수 있습니다
